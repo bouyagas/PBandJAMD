@@ -2,11 +2,7 @@
   "name": "pbandjamd",
   "version": "1.0.0",
   "engines": {
-<<<<<<< HEAD
-    "node": "7.1.0"
-=======
     "node": "7.2.0"
->>>>>>> d2d4792e2e87b91fc92431bbe505646d28d2c6d3
   },
   "description": "Project 3 forum built with backend API and frontend React.",
   "main": "server.js",
