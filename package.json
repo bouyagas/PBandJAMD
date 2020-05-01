@@ -13,7 +13,9 @@
     "start": "node server.js",
     "rebuild": "webpack -d --progress --colors",
     "watch": "webpack -d --progress --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Jaemin Han, Alexander Tong, Mohamed Gassama and Damira Ibragimova",
   "license": "MIT",
@@ -24,7 +26,8 @@
     "lodash": "^4.17.11",
     "morgan": "^1.9.1",
     "path": "^0.12.7",
-    "pg-promise": "^8.5.0"
+    "pg-promise": "^8.5.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
@@ -51,5 +54,6 @@
     "url-loader": "^1.1.1",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
-  }
+  },
+  "snyk": true
 }
